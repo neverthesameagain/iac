@@ -47,6 +47,7 @@
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
     <style>
+
         .photo-container {
             text-align: center;
             margin-bottom: 20px;
@@ -75,6 +76,52 @@
 .section-title p {
 	color: #777;
 	font-size: 16px;
+}
+	    .experience {
+  position: relative;
+}
+
+.timeline-list {
+  list-style: none;
+  padding: 0;
+  position: relative;
+}
+
+.timeline-list li {
+  position: relative;
+  margin: 40px 0;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.timeline_content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.timeline_content span {
+  display: block;
+  font-weight: 600;
+  color: #007bff;
+}
+
+.pointer {
+  position: fixed;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  height: 100%;
+  width: 2px;
+  background: #007bff;
+  z-index: 1;
+}
+
+.timeline-list li.active {
+  opacity: 1;
+  transform: translateY(0);
 }
 .section-title h4 {
 	text-transform: capitalize;
@@ -330,55 +377,56 @@ ul.timeline-list li:before {
 
     
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Poppins:400,500,600,700" rel="stylesheet"> 
+
 <section class="experience pt-100 pb-100" id="experience">
-  <div class="container">
-    <div class="row">
-      <div class="col-xl-8 mx-auto text-center">
-        <div class="section-title">
-          <h4>IAC Experience</h4>
-          <p>Engage with the best minds, explore cutting-edge innovations, and dive into insightful discussions</p>
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-8 mx-auto text-center">
+                <div class="section-title">
+                    <h4>IAC Experience</h4>
+                    <p>Engage with the best minds, explore cutting-edge innovations, and dive into insightful discussions</p>
+                </div>
+            </div>
         </div>
-      </div>
+        <div class="row">
+            <div class="col-xl-12">
+                <ul class="timeline-list">
+                    <!-- Lecture Series -->
+                    <li>
+                        <div class="timeline_content">
+                            <span>Lecture Series</span>
+                            <h4>Broaden Your Intellectual Horizons</h4>
+                            <p>Ready to broaden your intellectual horizons? Become a part of the IAC Lecture Series, where renowned professors from diverse disciplines share their expertise and insights on cutting-edge topics. This is more than just a lecture—it's an engaging experience that will inspire you, broaden your perspective, and connect you with the latest in knowledge. Don't miss this unique opportunity to learn from the best minds in their fields!</p>
+                        </div>
+                    </li>
+                    <!-- Exhibition -->
+                    <li>
+                        <div class="timeline_content">
+                            <span>Exhibition</span>
+                            <h4>Showcase Your Innovations</h4>
+                            <p>Unleash your creativity and showcase your innovative projects, products, and posters at the IAC Exhibition! This is a fantastic chance for students to present their work to professionals from various industries, receive valuable feedback, and potentially spark collaborations.</p>
+                        </div>
+                    </li>
+                    <!-- Start-Up Booths -->
+                    <li>
+                        <div class="timeline_content">
+                            <span>Start-Up Booths</span>
+                            <h4>Explore Innovative Startups</h4>
+                            <p>Explore innovative startups founded by recent graduates, supported by TECHIN and IPTIF. These dynamic booths offer a platform for young entrepreneurs to share their journey from idea to execution. Engage with the founders, learn about their challenges, and discover how their startups are shaping the future. These booths provide a firsthand look at the cutting-edge innovations emerging from our alumni network.</p>
+                        </div>
+                    </li>
+                    <!-- Panel Discussion -->
+                    <li>
+                        <div class="timeline_content">
+                            <span>Panel Discussion</span>
+                            <h4>Gain Insights from Industry Experts</h4>
+                            <p>Join a group of industry experts as they delve into key topics relevant to the industrial world. This session offers valuable insights into current trends and practical applications. This panel discussion is the perfect platform to ask questions and engage directly with the panelists, making this an invaluable chance to gain knowledge and advice from experienced professionals.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
-    <div class="row">
-      <div class="col-xl-12">
-        <ul class="timeline-list">
-          <!-- Lecture Series -->
-          <li>
-            <div class="timeline_content">
-              <span>Lecture Series</span>
-              <h4>Broaden Your Intellectual Horizons</h4>
-              <p>Ready to broaden your intellectual horizons? Become a part of the IAC Lecture Series, where renowned professors from diverse disciplines share their expertise and insights on cutting-edge topics. This is more than just a lecture—it's an engaging experience that will inspire you, broaden your perspective, and connect you with the latest in knowledge. Don't miss this unique opportunity to learn from the best minds in their fields!</p>
-            </div>
-          </li>
-          <!-- Exhibition -->
-          <li>
-            <div class="timeline_content">
-              <span>Exhibition</span>
-              <h4>Showcase Your Innovations</h4>
-              <p>Unleash your creativity and showcase your innovative projects, products, and posters at the IAC Exhibition! This is a fantastic chance for students to present their work to professionals from various industries, receive valuable feedback, and potentially spark collaborations.</p>
-            </div>
-          </li>
-          <!-- Start-Up Booths -->
-          <li>
-            <div class="timeline_content">
-              <span>Start-Up Booths</span>
-              <h4>Explore Innovative Startups</h4>
-              <p>Explore innovative startups founded by recent graduates, supported by TECHIN and IPTIF. These dynamic booths offer a platform for young entrepreneurs to share their journey from idea to execution. Engage with the founders, learn about their challenges, and discover how their startups are shaping the future. These booths provide a firsthand look at the cutting-edge innovations emerging from our alumni network.</p>
-            </div>
-          </li>
-          <!-- Panel Discussion -->
-          <li>
-            <div class="timeline_content">
-              <span>Panel Discussion</span>
-              <h4>Gain Insights from Industry Experts</h4>
-              <p>Join a group of industry experts as they delve into key topics relevant to the industrial world. This session offers valuable insights into current trends and practical applications. This panel discussion is the perfect platform to ask questions and engage directly with the panelists, making this an invaluable chance to gain knowledge and advice from experienced professionals.</p>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
 </section>
 
 
@@ -1110,6 +1158,35 @@ ul.timeline-list li:before {
 
 	<!-- AOS JavaScript -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const timelineItems = document.querySelectorAll('.timeline-list li');
+  const pointer = document.createElement('div');
+  pointer.classList.add('pointer');
+  document.body.appendChild(pointer);
+  
+  const handleScroll = () => {
+    const windowHeight = window.innerHeight;
+    const pointerPos = window.scrollY + (windowHeight / 2);
+    
+    pointer.style.top = `${pointerPos}px`;
+
+    timelineItems.forEach((item, index) => {
+      const rect = item.getBoundingClientRect();
+      const itemTop = rect.top + window.scrollY;
+
+      if (itemTop < pointerPos && itemTop + rect.height > pointerPos) {
+        item.classList.add('active');
+      } else {
+        item.classList.remove('active');
+      }
+    });
+  };
+
+  window.addEventListener('scroll', handleScroll);
+});
+</script>
+
 
 
 </body>
